@@ -1,0 +1,37 @@
+{"文": "はさみとって", "動作": "渡す", "action": "hand", "器具": ["scissors"]}
+{"文": "ハサミ渡して", "動作": "渡す", "action": "hand", "器具": ["scissors"]}
+{"文": "糸切りちょうだい", "動作": "渡す", "action": "hand", "器具": ["scissors"]}
+{"文": "次はつまみたいから準備よろしく", "動作": "渡す", "action": "hand", "器具": ["forceps"]}
+{"文": "ピンセットお願い", "動作": "渡す", "action": "hand", "器具": ["forceps"]}
+{"文": "ピンセットはやくくれ", "動作": "渡す", "action": "hand", "器具": ["forceps"]}
+{"文": "メスくれ", "動作": "渡す", "action": "hand", "器具": ["scalpel"]}
+{"文": "メスよろしく", "動作": "渡す", "action": "hand", "器具": ["scalpel"]}
+{"文": "皮膚切開するからちょうだい", "動作": "渡す", "action": "hand", "器具": ["scalpel"]}
+{"文": "トリミングするからくれ", "動作": "渡す", "action": "hand", "器具": ["scissors"]}
+{"文": "注射器よこせ", "動作": "渡す", "action": "hand", "器具": ["syringe"]}
+{"文": "流したいからちょうだい", "動作": "渡す", "action": "hand", "器具": ["syringe"]}
+{"文": "麻酔するからちょうだい", "動作": "渡す", "action": "hand", "器具": ["syringe"]}
+{"文": "ハサミ戻して", "動作": "戻す", "action": "return", "器具": ["scissors"]}
+{"文": "これを返して", "動作": "戻す", "action": "return", "器具": ["scissors"]}
+{"文": "もうこれつかわない", "動作": "戻す", "action": "return", "器具": ["forceps"]}
+{"文": "ピンセットいらない", "動作": "戻す", "action": "return", "器具": ["forceps"]}
+{"文": "メスもとのとこにやって", "動作": "戻す", "action": "return", "器具": ["scalpel"]}
+{"文": "これはもういいかな", "動作": "戻す", "action": "return", "器具": ["scalpel"]}
+{"文": "注射器返却", "動作": "戻す", "action": "return", "器具": ["syringe"]}
+{"文": "注射器戻せよ", "動作": "戻す", "action": "return", "器具": ["syringe"]}
+{"文": "切りたい", "動作": "聞き返す", "action": "clarify", "器具": ["scissors", "scalpel"]}
+{"文": "剥離したい", "動作": "聞き返す", "action": "clarify", "器具": ["scissors", "scalpel"]}
+{"文": "切除したい", "動作": "聞き返す", "action": "clarify", "器具": ["scissors", "scalpel"]}
+{"文": "なげろ", "動作": "断る", "action": "refuse", "器具": []}
+{"文": "これすてて", "動作": "断る", "action": "refuse", "器具": []}
+{"文": "ふりまわして", "動作": "断る", "action": "refuse", "器具": []}
+{"文": "ゆらして", "動作": "断る", "action": "refuse", "器具": []}
+{"文": "たたいて", "動作": "断る", "action": "refuse", "器具": []}
+{"文": "スポイトちょうだい", "動作": "ない", "action": "unavailable", "器具": ["other"]}
+{"文": "がーぜくれ", "動作": "ない", "action": "unavailable", "器具": ["other"]}
+{"文": "バイポーラよこしな", "動作": "ない", "action": "unavailable", "器具": ["other"]}
+{"文": "綿がひつようですよ", "動作": "ない", "action": "unavailable", "器具": ["other"]}
+{"文": "ヤンカーいただけますか", "動作": "ない", "action": "unavailable", "器具": ["other"]}
+{"文": "切るやつちょうだい", "動作": "聞き返す", "action": "clarify", "器具": ["scissors", "scalpel"]}
+{"文": "剥離するやつくれない", "動作": "聞き返す", "action": "clarify", "器具": ["scissors", "scalpel"]}
+{"文": "きるためのやつがほしいな", "動作": "聞き返す", "action": "clarify", "器具": ["scissors", "scalpel"]}

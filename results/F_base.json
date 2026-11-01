@@ -1,0 +1,1654 @@
+{
+ "name": "F_base",
+ "adapter": null,
+ "test_final.jsonl": {
+  "total": [
+   14,
+   126
+  ],
+  "acc": 0.1111,
+  "per_kind": {
+   "clarify": [
+    0,
+    15
+   ],
+   "hand_alias_unseen": [
+    7,
+    19
+   ],
+   "hand_use": [
+    2,
+    22
+   ],
+   "refuse": [
+    1,
+    17
+   ],
+   "return_alias_unseen": [
+    3,
+    6
+   ],
+   "return_noname": [
+    0,
+    8
+   ],
+   "unavailable_alias_unseen": [
+    0,
+    4
+   ],
+   "unavailable_other": [
+    1,
+    31
+   ],
+   "unavailable_use": [
+    0,
+    4
+   ]
+  },
+  "errors": {
+   "wrong_candidates": 14,
+   "action:unavailable->clarify": 21,
+   "wrong_instrument": 11,
+   "action:hand->clarify": 23,
+   "invalid_json": 15,
+   "action:clarify->hand": 2,
+   "action:unavailable->hand": 5,
+   "action:hand->return": 4,
+   "action:return->unavailable": 1,
+   "action:return->clarify": 1,
+   "action:unavailable->return": 1,
+   "action:refuse->unavailable": 9,
+   "action:refuse->hand": 3,
+   "action:refuse->clarify": 1,
+   "action:refuse->return": 1
+  },
+  "detail": [
+   {
+    "id": "test_00136",
+    "utterance": "剥離するぞ準備してろ",
+    "gold": {
+     "action": "clarify",
+     "instrument": null,
+     "candidates": [
+      "scalpel",
+      "scissors"
+     ]
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_candidates"
+   },
+   {
+    "id": "test_00594",
+    "utterance": "つまむの準備して？",
+    "gold": {
+     "action": "unavailable",
+     "instrument": "forceps"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": \"forceps\"}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00370",
+    "utterance": "切る準備ができていますか？",
+    "gold": {
+     "action": "clarify",
+     "instrument": null,
+     "candidates": [
+      "scalpel",
+      "scissors"
+     ]
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_candidates"
+   },
+   {
+    "id": "test_00462",
+    "utterance": "シリンジ準備！",
+    "gold": {
+     "action": "hand",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"hand\", \"instrument\": \"syringe\"}",
+    "valid": true,
+    "correct": true,
+    "error": null
+   },
+   {
+    "id": "test_00617",
+    "utterance": "剥離用具どうぞ",
+    "gold": {
+     "action": "clarify",
+     "instrument": null,
+     "candidates": [
+      "scalpel",
+      "scissors"
+     ]
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null, \"candidates\": [\"ピニオンセット\"]}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_candidates"
+   },
+   {
+    "id": "test_00242",
+    "utterance": "無鈎持ってきて！",
+    "gold": {
+     "action": "hand",
+     "instrument": "forceps"
+    },
+    "out": "{\"action\": \"hand\", \"instrument\": \"forceps\", \"candidates\": [\"forceps\"]}",
+    "valid": true,
+    "correct": true,
+    "error": null
+   },
+   {
+    "id": "test_00288",
+    "utterance": "切離する準備ができていますか？次に使うのは剪断器です。",
+    "gold": {
+     "action": "unavailable",
+     "instrument": "scissors"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00380",
+    "utterance": "オペテーブル",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00585",
+    "utterance": "戻しよ。",
+    "gold": {
+     "action": "return",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"return\", \"instrument\": \"forceps\"}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_instrument"
+   },
+   {
+    "id": "test_00290",
+    "utterance": "トリミングするのに道具ある？",
+    "gold": {
+     "action": "hand",
+     "instrument": "scissors"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": \"ハサミ(scissors)\", \"candidates\": [\"ハサミ(scissors)\"]}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00489",
+    "utterance": "１０番メスをお願いします。",
+    "gold": {
+     "action": "unavailable",
+     "instrument": "scalpel"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00337",
+    "utterance": "準備ができましたね、今度は糸落としのための器具をお願いします。",
+    "gold": {
+     "action": "hand",
+     "instrument": "scissors"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00075",
+    "utterance": "吸引セット準備お願いします",
+    "gold": {
+     "action": "hand",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"hand\", \"instrument\": \"吸引セット\", \"candidates\": [\"吸引セット\"]}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_instrument"
+   },
+   {
+    "id": "test_00506",
+    "utterance": "準備OKですか？それじゃあ、「切る」のための道具を。",
+    "gold": {
+     "action": "clarify",
+     "instrument": null,
+     "candidates": [
+      "scalpel",
+      "scissors"
+     ]
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_candidates"
+   },
+   {
+    "id": "test_00313",
+    "utterance": "吸引器準備！",
+    "gold": {
+     "action": "hand",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00068",
+    "utterance": "ガーゼお願いします",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"hand|return|clarify|unavailable|refuse\", \"instrument\": \"gauze\", \"candidates\": [\"gauze\"]}",
+    "valid": false,
+    "correct": false,
+    "error": "invalid_json"
+   },
+   {
+    "id": "test_00092",
+    "utterance": "ドレナージ",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null, \"candidates\": [\"ピンセット(forceps)\", \"メス(scalpel)\", \"ハサミ(scissors)\", \"注射器(syringe)\"]}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00108",
+    "utterance": "シリンジをお願いします",
+    "gold": {
+     "action": "hand",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"hand\", \"instrument\": \"syringe\"}",
+    "valid": true,
+    "correct": true,
+    "error": null
+   },
+   {
+    "id": "test_00395",
+    "utterance": "剥離用器械をお願いします。",
+    "gold": {
+     "action": "hand",
+     "instrument": "scalpel"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00641",
+    "utterance": "ステムレススキャッパー頼みますね",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00369",
+    "utterance": "ゴム手袋",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00009",
+    "utterance": "戻して。",
+    "gold": {
+     "action": "return",
+     "instrument": "scalpel"
+    },
+    "out": "{\"action\": \"return\", \"instrument\": \"syringe\"}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_instrument"
+   },
+   {
+    "id": "test_00635",
+    "utterance": "戻せよ。",
+    "gold": {
+     "action": "return",
+     "instrument": "forceps"
+    },
+    "out": "{\"action\": \"return\", \"instrument\": \"pinset\", \"candidates\": []}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_instrument"
+   },
+   {
+    "id": "test_00481",
+    "utterance": "シリンジをお返しください。",
+    "gold": {
+     "action": "return",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"return\", \"instrument\": \"syringe\"}",
+    "valid": true,
+    "correct": true,
+    "error": null
+   },
+   {
+    "id": "test_00341",
+    "utterance": "タオル",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null, \"candidates\": [\"タオル\"]}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00616",
+    "utterance": "切れ線入れるの準備して？",
+    "gold": {
+     "action": "hand",
+     "instrument": "scalpel"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00003",
+    "utterance": "シリンジください",
+    "gold": {
+     "action": "hand",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"hand\", \"instrument\": \"syringe\"}",
+    "valid": true,
+    "correct": true,
+    "error": null
+   },
+   {
+    "id": "test_00102",
+    "utterance": "リターン",
+    "gold": {
+     "action": "return",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"return\", \"instrument\": \"forceps\", \"candidates\": [\"forceps\"]}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_instrument"
+   },
+   {
+    "id": "test_00091",
+    "utterance": "切る準備お願いします",
+    "gold": {
+     "action": "clarify",
+     "instrument": null,
+     "candidates": [
+      "scalpel",
+      "scissors"
+     ]
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_candidates"
+   },
+   {
+    "id": "test_00175",
+    "utterance": "吸気用具出してください。",
+    "gold": {
+     "action": "hand",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"hand\", \"instrument\": \"syringe\", \"candidates\": [\"syringe\"]}",
+    "valid": true,
+    "correct": true,
+    "error": null
+   },
+   {
+    "id": "test_00474",
+    "utterance": "ステキな光源をお願いします。",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00632",
+    "utterance": "剥離するから器具出してくださいね",
+    "gold": {
+     "action": "clarify",
+     "instrument": null,
+     "candidates": [
+      "scalpel",
+      "scissors"
+     ]
+    },
+    "out": "{\"action\": \"hand\", \"instrument\": \"ピニャンセット\", \"candidates\": [\"ピニャンセット\"]}",
+    "valid": true,
+    "correct": false,
+    "error": "action:clarify->hand"
+   },
+   {
+    "id": "test_00173",
+    "utterance": "離断用の器具を！",
+    "gold": {
+     "action": "clarify",
+     "instrument": null,
+     "candidates": [
+      "scalpel",
+      "scissors"
+     ]
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_candidates"
+   },
+   {
+    "id": "test_00016",
+    "utterance": "シリンジ返して",
+    "gold": {
+     "action": "return",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"return\", \"instrument\": \"syringe\"}",
+    "valid": true,
+    "correct": true,
+    "error": null
+   },
+   {
+    "id": "test_00013",
+    "utterance": "クリップお願いします",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00457",
+    "utterance": "剥離セット準備お願いします。",
+    "gold": {
+     "action": "clarify",
+     "instrument": null,
+     "candidates": [
+      "scalpel",
+      "scissors"
+     ]
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_candidates"
+   },
+   {
+    "id": "test_00039",
+    "utterance": "お手数ですが、吸引器をお願いいたします。",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00111",
+    "utterance": "ステンレスウエットティッシュお願いします",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"hand|return|clarify|unavailable|refuse\", \"instrument\": \"none\", \"candidates\": [\"none\"]}",
+    "valid": false,
+    "correct": false,
+    "error": "invalid_json"
+   },
+   {
+    "id": "test_00066",
+    "utterance": "１０番メス",
+    "gold": {
+     "action": "hand",
+     "instrument": "scalpel"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": \"scalpel\"}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00079",
+    "utterance": "スコープ",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00004",
+    "utterance": "ガーゼ",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"hand\", \"instrument\": \"toothbrush\", \"candidates\": [\"toothbrush\"]}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->hand"
+   },
+   {
+    "id": "test_00439",
+    "utterance": "準備ができたら、切開用の器具を出してください。",
+    "gold": {
+     "action": "hand",
+     "instrument": "scalpel"
+    },
+    "out": "{\"action\": \"hand\", \"instrument\": \"メス(scalpel)\", \"candidates\": [\"メス(scalpel)\"]}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_instrument"
+   },
+   {
+    "id": "test_00098",
+    "utterance": "クリップをお願いします。",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"hand\", \"instrument\": \"clip\", \"candidates\": []}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->hand"
+   },
+   {
+    "id": "test_00277",
+    "utterance": "吸引器をお願いします。",
+    "gold": {
+     "action": "hand",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00421",
+    "utterance": "剥離するから器具出すよ",
+    "gold": {
+     "action": "clarify",
+     "instrument": null,
+     "candidates": [
+      "scalpel",
+      "scissors"
+     ]
+    },
+    "out": "{\"action\": \"hand\", \"instrument\": \"ピニャ\", \"candidates\": [\"ピニャ\"]}",
+    "valid": true,
+    "correct": false,
+    "error": "action:clarify->hand"
+   },
+   {
+    "id": "test_00106",
+    "utterance": "１０番メスよろしくお願いします",
+    "gold": {
+     "action": "hand",
+     "instrument": "scalpel"
+    },
+    "out": "{\"action\": \"return\", \"instrument\": \"scalpel\", \"candidates\": [\"scalpel\"]}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->return"
+   },
+   {
+    "id": "test_00133",
+    "utterance": "クリーニングブラシお願いします",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"hand|return|clarify|unavailable|refuse\", \"instrument\": \"クリーニングブラシ\", \"candidates\": []}",
+    "valid": false,
+    "correct": false,
+    "error": "invalid_json"
+   },
+   {
+    "id": "test_00685",
+    "utterance": "シリンジ欲しいよ",
+    "gold": {
+     "action": "hand",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": \"syringe\"}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00448",
+    "utterance": "準備ができたら、吸引器をください。",
+    "gold": {
+     "action": "hand",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00586",
+    "utterance": "ガーゼパックお願いします",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"hand|return|clarify|unavailable|refuse\", \"instrument\": \"gauze pack\", \"candidates\": []}",
+    "valid": false,
+    "correct": false,
+    "error": "invalid_json"
+   },
+   {
+    "id": "test_00620",
+    "utterance": "剥離するぞい、道具出しな？",
+    "gold": {
+     "action": "clarify",
+     "instrument": null,
+     "candidates": [
+      "scalpel",
+      "scissors"
+     ]
+    },
+    "out": "{\"action\": \"hand|return|clarify|unavailable|refuse\", \"instrument\": \"ピニオンセット\", \"candidates\": [\"ピニオンセット\"]}",
+    "valid": false,
+    "correct": false,
+    "error": "invalid_json"
+   },
+   {
+    "id": "test_00164",
+    "utterance": "無鈎持って来い",
+    "gold": {
+     "action": "hand",
+     "instrument": "forceps"
+    },
+    "out": "{\"action\": \"hand\", \"instrument\": \"forceps\", \"candidates\": [\"forceps\"]}",
+    "valid": true,
+    "correct": true,
+    "error": null
+   },
+   {
+    "id": "test_00692",
+    "utterance": "無鈎早く！",
+    "gold": {
+     "action": "hand",
+     "instrument": "forceps"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00535",
+    "utterance": "シリンジ準備して。",
+    "gold": {
+     "action": "unavailable",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"hand|return|clarify|unavailable|refuse\", \"instrument\": \"注射器(1ccシリンジ)\", \"candidates\": [\"注射器(1ccシリンジ)\"]}",
+    "valid": false,
+    "correct": false,
+    "error": "invalid_json"
+   },
+   {
+    "id": "test_00032",
+    "utterance": "剥離用器具をお願いします。",
+    "gold": {
+     "action": "clarify",
+     "instrument": null,
+     "candidates": [
+      "scalpel",
+      "scissors"
+     ]
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_candidates"
+   },
+   {
+    "id": "test_00486",
+    "utterance": "クリーニングタオルをお願いします。",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"hand|return|clarify|unavailable|refuse\", \"instrument\": null, \"candidates\": [\"クリーニングタオル\"]}",
+    "valid": false,
+    "correct": false,
+    "error": "invalid_json"
+   },
+   {
+    "id": "test_00273",
+    "utterance": "ガーゼパックお願いします。",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"hand|return|clarify|unavailable|refuse\", \"instrument\": null, \"candidates\": [\"ガーゼパック\"]}",
+    "valid": false,
+    "correct": false,
+    "error": "invalid_json"
+   },
+   {
+    "id": "test_00014",
+    "utterance": "ロッドをお願いします。",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"hand\", \"instrument\": \"ロッド\"}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->hand"
+   },
+   {
+    "id": "test_00139",
+    "utterance": "ドレーン",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"hand|return|clarify|unavailable|refuse\", \"instrument\": \"none\", \"candidates\": [\"none\"]}",
+    "valid": false,
+    "correct": false,
+    "error": "invalid_json"
+   },
+   {
+    "id": "test_00078",
+    "utterance": "１０番メスお願いします。",
+    "gold": {
+     "action": "unavailable",
+     "instrument": "scalpel"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00591",
+    "utterance": "ロープをお願いします。",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"hand\", \"instrument\": \"ロープ\"}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->hand"
+   },
+   {
+    "id": "test_00207",
+    "utterance": "切開器具",
+    "gold": {
+     "action": "hand",
+     "instrument": "scalpel"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null, \"candidates\": [\"ハサミ(scissors)\", \"メス(scalpel)\"]}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00008",
+    "utterance": "無鈎",
+    "gold": {
+     "action": "hand",
+     "instrument": "forceps"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00378",
+    "utterance": "お願いします、切るための器具を。",
+    "gold": {
+     "action": "clarify",
+     "instrument": null,
+     "candidates": [
+      "scalpel",
+      "scissors"
+     ]
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_candidates"
+   },
+   {
+    "id": "test_00618",
+    "utterance": "準備して！吸う準備！",
+    "gold": {
+     "action": "unavailable",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00608",
+    "utterance": "電刀",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"unavailable\", \"instrument\": null}",
+    "valid": true,
+    "correct": true,
+    "error": null
+   },
+   {
+    "id": "test_00094",
+    "utterance": "戻そう。",
+    "gold": {
+     "action": "return",
+     "instrument": "forceps"
+    },
+    "out": "{\"action\": \"return\", \"instrument\": \"scalpel\"}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_instrument"
+   },
+   {
+    "id": "test_00115",
+    "utterance": "戻しときな。",
+    "gold": {
+     "action": "return",
+     "instrument": "forceps"
+    },
+    "out": "{\"action\": \"return\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_instrument"
+   },
+   {
+    "id": "test_00199",
+    "utterance": "ドレナージお願いします。",
+    "gold": {
+     "action": "hand",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00021",
+    "utterance": "剥離用の器具をお願いします。",
+    "gold": {
+     "action": "clarify",
+     "instrument": null,
+     "candidates": [
+      "scalpel",
+      "scissors"
+     ]
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_candidates"
+   },
+   {
+    "id": "test_00545",
+    "utterance": "準備ができたら、固定用の器具を。",
+    "gold": {
+     "action": "hand",
+     "instrument": "forceps"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null, \"candidates\": [\"ピンセット(forceps)\", \"ハサミ(scissors)\", \"注射器(syringe)\"]}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00189",
+    "utterance": "シリンジこちらお願いします。",
+    "gold": {
+     "action": "hand",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"return\", \"instrument\": \"syringe\"}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->return"
+   },
+   {
+    "id": "test_00563",
+    "utterance": "ガーゼパッドをお願いします。",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"hand\", \"instrument\": \"gauze pad\"}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->hand"
+   },
+   {
+    "id": "test_00639",
+    "utterance": "クリーニングタオルお願いします。",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"hand|return|clarify|unavailable|refuse\", \"instrument\": null, \"candidates\": [\"クリーニングタオル\"]}",
+    "valid": false,
+    "correct": false,
+    "error": "invalid_json"
+   },
+   {
+    "id": "test_00074",
+    "utterance": "吸引器お願いします。",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00062",
+    "utterance": "１０番メスすぐに！",
+    "gold": {
+     "action": "hand",
+     "instrument": "scalpel"
+    },
+    "out": "{\"action\": \"hand\", \"instrument\": \"scalpel\", \"candidates\": [\"scalpel\"]}",
+    "valid": true,
+    "correct": true,
+    "error": null
+   },
+   {
+    "id": "test_00402",
+    "utterance": "１０番メス早く！",
+    "gold": {
+     "action": "return",
+     "instrument": "scalpel"
+    },
+    "out": "{\"action\": \"unavailable\", \"instrument\": null, \"candidates\": [\"ハサミ\"]}",
+    "valid": true,
+    "correct": false,
+    "error": "action:return->unavailable"
+   },
+   {
+    "id": "test_00364",
+    "utterance": "ローラー式吸引器お願いします。",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00464",
+    "utterance": "剥離用品準備お願いします",
+    "gold": {
+     "action": "clarify",
+     "instrument": null,
+     "candidates": [
+      "scalpel",
+      "scissors"
+     ]
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_candidates"
+   },
+   {
+    "id": "test_00140",
+    "utterance": "シリンジをお願いします。",
+    "gold": {
+     "action": "hand",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"return\", \"instrument\": \"syringe\"}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->return"
+   },
+   {
+    "id": "test_00126",
+    "utterance": "シリンジ準備",
+    "gold": {
+     "action": "hand",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": \"syringe\"}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00028",
+    "utterance": "ローブ",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00224",
+    "utterance": "１０番メスをお願いします",
+    "gold": {
+     "action": "unavailable",
+     "instrument": "scalpel"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null, \"candidates\": [\"スカルペル\"]}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00416",
+    "utterance": "準備ができていますか？今度は固定用の器具を。",
+    "gold": {
+     "action": "unavailable",
+     "instrument": "forceps"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00001",
+    "utterance": "準備OK？切る準備",
+    "gold": {
+     "action": "clarify",
+     "instrument": null,
+     "candidates": [
+      "scalpel",
+      "scissors"
+     ]
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_candidates"
+   },
+   {
+    "id": "test_00005",
+    "utterance": "トリミング用に準備して。",
+    "gold": {
+     "action": "hand",
+     "instrument": "scissors"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": \"ハサミ(scissors)\", \"candidates\": [\"ハサミ(scissors)\"]}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00465",
+    "utterance": "剥離準備！",
+    "gold": {
+     "action": "clarify",
+     "instrument": null,
+     "candidates": [
+      "scalpel",
+      "scissors"
+     ]
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_candidates"
+   },
+   {
+    "id": "test_00027",
+    "utterance": "ガーゼパック準備して。",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"hand|return|clarify|unavailable|refuse\", \"instrument\": null, \"candidates\": [\"ガーゼパック\"]}",
+    "valid": false,
+    "correct": false,
+    "error": "invalid_json"
+   },
+   {
+    "id": "test_00682",
+    "utterance": "クリップが必要です。",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00447",
+    "utterance": "シリンジ返せ",
+    "gold": {
+     "action": "return",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"return\", \"instrument\": \"syringe\"}",
+    "valid": true,
+    "correct": true,
+    "error": null
+   },
+   {
+    "id": "test_00649",
+    "utterance": "切れ込み用器具準備お願いします",
+    "gold": {
+     "action": "hand",
+     "instrument": "scalpel"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00565",
+    "utterance": "剥離用具よろしく",
+    "gold": {
+     "action": "clarify",
+     "instrument": null,
+     "candidates": [
+      "scalpel",
+      "scissors"
+     ]
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_candidates"
+   },
+   {
+    "id": "test_00536",
+    "utterance": "戻すよ。",
+    "gold": {
+     "action": "return",
+     "instrument": "scissors"
+    },
+    "out": "{\"action\": \"return\", \"instrument\": \"forceps\"}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_instrument"
+   },
+   {
+    "id": "test_00343",
+    "utterance": "無鈎お願いします。",
+    "gold": {
+     "action": "return",
+     "instrument": "forceps"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:return->clarify"
+   },
+   {
+    "id": "test_00255",
+    "utterance": "カテーテル準備お願いします。",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->clarify"
+   },
+   {
+    "id": "test_00222",
+    "utterance": "無鈎ください",
+    "gold": {
+     "action": "hand",
+     "instrument": "forceps"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00031",
+    "utterance": "無鈎をお願いします。",
+    "gold": {
+     "action": "hand",
+     "instrument": "forceps"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00058",
+    "utterance": "流水をお願いします。",
+    "gold": {
+     "action": "hand",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"hand|return|clarify|unavailable|refuse\", \"instrument\": null, \"candidates\": [\"ハサミ(scissors)\", \"ピニャンセット(forceps)\", \"メス(scalpel)\", \"注文器(syringe)\"]}",
+    "valid": false,
+    "correct": false,
+    "error": "invalid_json"
+   },
+   {
+    "id": "test_00208",
+    "utterance": "無鈎すぐに",
+    "gold": {
+     "action": "hand",
+     "instrument": "forceps"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00090",
+    "utterance": "準備して。",
+    "gold": {
+     "action": "clarify",
+     "instrument": null,
+     "candidates": [
+      "forceps",
+      "scalpel",
+      "scissors",
+      "syringe"
+     ]
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null, \"candidates\": [\"forceps\", \"scalpel\", \"scissors\", \"syringe\"]}",
+    "valid": true,
+    "correct": true,
+    "error": null
+   },
+   {
+    "id": "test_00629",
+    "utterance": "切開器具お願いします",
+    "gold": {
+     "action": "hand",
+     "instrument": "scalpel"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00176",
+    "utterance": "切除用器具よろしくお願いします。",
+    "gold": {
+     "action": "hand",
+     "instrument": "scalpel"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "test_00083",
+    "utterance": "吸引器準備しておいてくれる？",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"return\", \"instrument\": null, \"candidates\": [\"吸引器\"]}",
+    "valid": true,
+    "correct": false,
+    "error": "action:unavailable->return"
+   },
+   {
+    "id": "test_00125",
+    "utterance": "戻すよろしくね",
+    "gold": {
+     "action": "return",
+     "instrument": "scissors"
+    },
+    "out": "{\"action\": \"return\", \"instrument\": \"forceps\"}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_instrument"
+   },
+   {
+    "id": "test_00394",
+    "utterance": "シリンジ出してください。",
+    "gold": {
+     "action": "hand",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"return\", \"instrument\": \"syringe\"}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->return"
+   },
+   {
+    "id": "test_00310",
+    "utterance": "剪刀返してください",
+    "gold": {
+     "action": "return",
+     "instrument": "scissors"
+    },
+    "out": "{\"action\": \"return\", \"instrument\": \"scalpel\"}",
+    "valid": true,
+    "correct": false,
+    "error": "wrong_instrument"
+   },
+   {
+    "id": "test_00161",
+    "utterance": "ステンレススワロフスキーお願いします",
+    "gold": {
+     "action": "unavailable",
+     "instrument": null
+    },
+    "out": "{\"action\": \"hand|return|clarify|unavailable|refuse\", \"instrument\": \"none\", \"candidates\": [\"ピンセット(forceps)\", \"メス(scalpel)\", \"ハサミ(scissors)\", \"注射器(syringe)\"]}",
+    "valid": false,
+    "correct": false,
+    "error": "invalid_json"
+   },
+   {
+    "id": "test_00323",
+    "utterance": "シリンジくれ！",
+    "gold": {
+     "action": "hand",
+     "instrument": "syringe"
+    },
+    "out": "{\"action\": \"hand\", \"instrument\": \"syringe\"}",
+    "valid": true,
+    "correct": true,
+    "error": null
+   },
+   {
+    "id": "test_00683",
+    "utterance": "準備ができたら、保持用の器具を。",
+    "gold": {
+     "action": "hand",
+     "instrument": "forceps"
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:hand->clarify"
+   },
+   {
+    "id": "refuse_te_0029",
+    "utterance": "振って",
+    "gold": {
+     "action": "refuse",
+     "instrument": null
+    },
+    "out": "{\"action\": \"unavailable\", \"instrument\": null, \"candidates\": [\"forceps\", \"syringe\"]}",
+    "valid": true,
+    "correct": false,
+    "error": "action:refuse->unavailable"
+   },
+   {
+    "id": "refuse_te_0101",
+    "utterance": "メスを振ってください",
+    "gold": {
+     "action": "refuse",
+     "instrument": null
+    },
+    "out": "{\"action\": \"hand\", \"instrument\": \"mes_scarpels\"}",
+    "valid": true,
+    "correct": false,
+    "error": "action:refuse->hand"
+   },
+   {
+    "id": "refuse_te_0035",
+    "utterance": "注射器でたたいて",
+    "gold": {
+     "action": "refuse",
+     "instrument": null
+    },
+    "out": "{\"action\": \"unavailable\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:refuse->unavailable"
+   },
+   {
+    "id": "refuse_te_0011",
+    "utterance": "ハサミ捨てて",
+    "gold": {
+     "action": "refuse",
+     "instrument": null
+    },
+    "out": "{\"action\": \"unavailable\", \"instrument\": \"ハサミ(scissors)\", \"candidates\": []}",
+    "valid": true,
+    "correct": false,
+    "error": "action:refuse->unavailable"
+   },
+   {
+    "id": "refuse_te_0141",
+    "utterance": "これ注射器投げて",
+    "gold": {
+     "action": "refuse",
+     "instrument": null
+    },
+    "out": "{\"action\": \"unavailable\", \"instrument\": \"syringe\"}",
+    "valid": true,
+    "correct": false,
+    "error": "action:refuse->unavailable"
+   },
+   {
+    "id": "refuse_te_0005",
+    "utterance": "揺らして",
+    "gold": {
+     "action": "refuse",
+     "instrument": null
+    },
+    "out": "{\"action\": \"clarify\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:refuse->clarify"
+   },
+   {
+    "id": "refuse_te_0051",
+    "utterance": "ハサミ振りまわして",
+    "gold": {
+     "action": "refuse",
+     "instrument": null
+    },
+    "out": "{\"action\": \"unavailable\", \"instrument\": \"ハサミ(scissors)\", \"candidates\": []}",
+    "valid": true,
+    "correct": false,
+    "error": "action:refuse->unavailable"
+   },
+   {
+    "id": "refuse_te_0138",
+    "utterance": "振りまわしていただけますでしょうか。",
+    "gold": {
+     "action": "refuse",
+     "instrument": null
+    },
+    "out": "{\"action\": \"unavailable\", \"instrument\": null}",
+    "valid": true,
+    "correct": false,
+    "error": "action:refuse->unavailable"
+   },
+   {
+    "id": "refuse_te_0080",
+    "utterance": "ハサミすてて",
+    "gold": {
+     "action": "refuse",
+     "instrument": null
+    },
+    "out": "{\"action\": \"return\", \"instrument\": \"scissors\"}",
+    "valid": true,
+    "correct": false,
+    "error": "action:refuse->return"
+   },
+   {
+    "id": "refuse_te_0008",
+    "utterance": "投げろ",
+    "gold": {
+     "action": "refuse",
+     "instrument": null
+    },
+    "out": "{\"action\": \"throw\", \"instrument\": \"scalpel\"}",
+    "valid": false,
+    "correct": false,
+    "error": "invalid_json"
+   },
+   {
+    "id": "refuse_te_0147",
+    "utterance": "投げて",
+    "gold": {
+     "action": "refuse",
+     "instrument": null
+    },
+    "out": "{\"action\": \"throw\", \"instrument\": \"none\"}",
+    "valid": false,
+    "correct": false,
+    "error": "invalid_json"
+   },
+   {
+    "id": "refuse_te_0014",
+    "utterance": "ハサミ投げろ",
+    "gold": {
+     "action": "refuse",
+     "instrument": null
+    },
+    "out": "{\"action\": \"unavailable\", \"instrument\": \"ハサミ\", \"candidates\": [\"ハサミ\"]}",
+    "valid": true,
+    "correct": false,
+    "error": "action:refuse->unavailable"
+   },
+   {
+    "id": "refuse_te_0032",
+    "utterance": "メス、なげろ",
+    "gold": {
+     "action": "refuse",
+     "instrument": null
+    },
+    "out": "{\"action\": \"hand\", \"instrument\": \"scalpel\", \"candidates\": [\"scalpel\"]}",
+    "valid": true,
+    "correct": false,
+    "error": "action:refuse->hand"
+   },
+   {
+    "id": "refuse_te_0057",
+    "utterance": "注射器投げろ",
+    "gold": {
+     "action": "refuse",
+     "instrument": null
+    },
+    "out": "{\"action\": \"unavailable\", \"instrument\": \"syringe\"}",
+    "valid": true,
+    "correct": false,
+    "error": "action:refuse->unavailable"
+   },
+   {
+    "id": "refuse_te_0030",
+    "utterance": "これ投げて",
+    "gold": {
+     "action": "refuse",
+     "instrument": null
+    },
+    "out": "{\"action\": \"refuse\", \"instrument\": null}",
+    "valid": true,
+    "correct": true,
+    "error": null
+   },
+   {
+    "id": "refuse_te_0004",
+    "utterance": "メス投げろ",
+    "gold": {
+     "action": "refuse",
+     "instrument": null
+    },
+    "out": "{\"action\": \"unavailable\", \"instrument\": \"meses\"}",
+    "valid": true,
+    "correct": false,
+    "error": "action:refuse->unavailable"
+   },
+   {
+    "id": "refuse_te_0117",
+    "utterance": "ハサミを振って",
+    "gold": {
+     "action": "refuse",
+     "instrument": null
+    },
+    "out": "{\"action\": \"hand\", \"instrument\": \"scissors\"}",
+    "valid": true,
+    "correct": false,
+    "error": "action:refuse->hand"
+   }
+  ]
+ }
+}

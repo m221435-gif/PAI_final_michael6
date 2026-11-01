@@ -1,0 +1,231 @@
+{"id": "test_00262", "文": "剥離用のキット返してくんさい。", "判定": "捨てる", "gold": {"action": "return", "instrument": "scalpel"}, "kind": "return_use"}
+{"id": "test_00136", "文": "剥離するぞ準備してろ", "判定": "OK", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00594", "文": "つまむの準備して？", "判定": "OK", "gold": {"action": "unavailable", "instrument": "forceps"}, "kind": "unavailable_use"}
+{"id": "test_00460", "文": "ロール", "判定": "捨てる", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00134", "文": "準備OK", "判定": "捨てる", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00370", "文": "切る準備ができていますか？", "判定": "直して OK", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "hand_use"}
+{"id": "test_00462", "文": "シリンジ準備！", "判定": "OK", "gold": {"action": "hand", "instrument": "syringe"}, "kind": "hand_alias_unseen"}
+{"id": "test_00617", "文": "剥離用具どうぞ", "判定": "OK", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00242", "文": "無鈎持ってきて！", "判定": "OK", "gold": {"action": "hand", "instrument": "forceps"}, "kind": "hand_alias_unseen"}
+{"id": "test_00012", "文": "準備ができましたね、このタッピングスクリューでよろしいでしょうか？", "判定": "捨てる", "gold": {"action": "hand", "instrument": "forceps"}, "kind": "hand_use"}
+{"id": "test_00566", "文": "準備好了嗎？需要這個。", "判定": "捨てる", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00270", "文": "注意しといて。", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "test_00288", "文": "切離する準備ができていますか？次に使うのは剪断器です。", "判定": "OK", "gold": {"action": "unavailable", "instrument": "scissors"}, "kind": "unavailable_use"}
+{"id": "test_00572", "文": "ドレナージ準備", "判定": "捨てる", "gold": {"action": "hand", "instrument": "syringe"}, "kind": "hand_use"}
+{"id": "test_00165", "文": "剥離用の器具が出ればお願いします。", "判定": "捨てる", "gold": {"action": "hand", "instrument": "scalpel"}, "kind": "hand_use"}
+{"id": "test_00380", "文": "オペテーブル", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00569", "文": "注意するな、ちゃんとやれ。", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "test_00060", "文": "無鈎の縫合針をお願いします。", "判定": "捨てる", "gold": {"action": "hand", "instrument": "forceps"}, "kind": "hand_alias_unseen"}
+{"id": "test_00281", "文": "ゴム手袋また必要ですか？", "判定": "捨てる", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00585", "文": "戻しよ。", "判定": "OK", "gold": {"action": "return", "instrument": "syringe"}, "kind": "return_noname"}
+{"id": "test_00052", "文": "糸落準備お願いします", "判定": "捨てる", "gold": {"action": "return", "instrument": "scissors"}, "kind": "return_use"}
+{"id": "test_00290", "文": "トリミングするのに道具ある？", "判定": "OK", "gold": {"action": "hand", "instrument": "scissors"}, "kind": "hand_use"}
+{"id": "test_00489", "文": "１０番メスをお願いします。", "判定": "OK", "gold": {"action": "unavailable", "instrument": "scalpel"}, "kind": "unavailable_alias_unseen"}
+{"id": "test_00337", "文": "準備ができましたね、今度は糸落としのための器具をお願いします。", "判定": "OK", "gold": {"action": "hand", "instrument": "scissors"}, "kind": "hand_use"}
+{"id": "test_00390", "文": "ヤダノコ", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "test_00311", "文": "無鈎の縫合器をお願いします。", "判定": "捨てる", "gold": {"action": "unavailable", "instrument": "forceps"}, "kind": "unavailable_alias_unseen"}
+{"id": "test_00075", "文": "吸引セット準備お願いします", "判定": "OK", "gold": {"action": "hand", "instrument": "syringe"}, "kind": "hand_use"}
+{"id": "test_00030", "文": "ストープルマシン貸して？", "判定": "捨てる", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00506", "文": "準備OKですか？それじゃあ、「切る」のための道具を。", "判定": "OK", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00313", "文": "吸引器準備！", "判定": "OK", "gold": {"action": "hand", "instrument": "syringe"}, "kind": "hand_use"}
+{"id": "test_00068", "文": "ガーゼお願いします", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00609", "文": "剥離用の器具でいいですか？", "判定": "捨てる", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00023", "文": "切れるの用準備して？", "判定": "捨てる", "gold": {"action": "hand", "instrument": "scalpel"}, "kind": "hand_use"}
+{"id": "test_00266", "文": "シリンジ早い！", "判定": "捨てる", "gold": {"action": "hand", "instrument": "syringe"}, "kind": "hand_alias_unseen"}
+{"id": "test_00092", "文": "ドレナージ", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00332", "文": "クリップセットの剪刀をお願いします。", "判定": "捨てる", "gold": {"action": "unavailable", "instrument": "scissors"}, "kind": "unavailable_alias_unseen"}
+{"id": "test_00108", "文": "シリンジをお願いします", "判定": "OK", "gold": {"action": "hand", "instrument": "syringe"}, "kind": "hand_alias_unseen"}
+{"id": "test_00395", "文": "剥離用器械をお願いします。", "判定": "OK", "gold": {"action": "hand", "instrument": "scalpel"}, "kind": "hand_use"}
+{"id": "test_00641", "文": "ステムレススキャッパー頼みますね", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00117", "文": "無鈎持っといて", "判定": "捨てる", "gold": {"action": "hand", "instrument": "forceps"}, "kind": "hand_alias_unseen"}
+{"id": "test_00369", "文": "ゴム手袋", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00009", "文": "戻して。", "判定": "OK", "gold": {"action": "return", "instrument": "scalpel"}, "kind": "return_noname"}
+{"id": "test_00583", "文": "剥離器具で準備OK？", "判定": "捨てる", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00485", "文": "クリスチャニアン線でお願いします。", "判定": "捨てる", "gold": {"action": "hand", "instrument": "scalpel"}, "kind": "hand_use"}
+{"id": "test_00635", "文": "戻せよ。", "判定": "OK", "gold": {"action": "return", "instrument": "forceps"}, "kind": "return_noname"}
+{"id": "test_00481", "文": "シリンジをお返しください。", "判定": "OK", "gold": {"action": "return", "instrument": "syringe"}, "kind": "return_alias_unseen"}
+{"id": "test_00613", "文": "切離用具", "判定": "捨てる", "gold": {"action": "hand", "instrument": "scissors"}, "kind": "hand_use"}
+{"id": "test_00341", "文": "タオル", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00616", "文": "切れ線入れるの準備して？", "判定": "OK", "gold": {"action": "hand", "instrument": "scalpel"}, "kind": "hand_use"}
+{"id": "test_00003", "文": "シリンジください", "判定": "OK", "gold": {"action": "hand", "instrument": "syringe"}, "kind": "hand_alias_unseen"}
+{"id": "test_00660", "文": "ヤダコイ", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "test_00102", "文": "リターン", "判定": "OK", "gold": {"action": "return", "instrument": "syringe"}, "kind": "return_noname"}
+{"id": "test_00091", "文": "切る準備お願いします", "判定": "OK", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00175", "文": "吸気用具出してください。", "判定": "OK", "gold": {"action": "hand", "instrument": "syringe"}, "kind": "hand_use"}
+{"id": "test_00550", "文": "クリップスタンド準備お願いします", "判定": "捨てる", "gold": {"action": "unavailable", "instrument": "forceps"}, "kind": "unavailable_use"}
+{"id": "test_00474", "文": "ステキな光源をお願いします。", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00632", "文": "剥離するから器具出してくださいね", "判定": "OK", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00623", "文": "準備して！", "判定": "捨てる", "gold": {"action": "unavailable", "instrument": "syringe"}, "kind": "unavailable_use"}
+{"id": "test_00173", "文": "離断用の器具を！", "判定": "直して OK", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "hand_use"}
+{"id": "test_00104", "文": "シリンジ出すよ", "判定": "捨てる", "gold": {"action": "hand", "instrument": "syringe"}, "kind": "hand_alias_unseen"}
+{"id": "test_00150", "文": "ご担当の先生、今必要となる電動ドリルをご準備顶けますでしょうか。", "判定": "捨てる", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00016", "文": "シリンジ返して", "判定": "OK", "gold": {"action": "return", "instrument": "syringe"}, "kind": "return_alias_unseen"}
+{"id": "test_00699", "文": "注意しといて！他に⚗️以外のことはするな！", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "test_00022", "文": "ロスゲット", "判定": "捨てる", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00013", "文": "クリップお願いします", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00124", "文": "無鈎急ぎ", "判定": "捨てる", "gold": {"action": "return", "instrument": "forceps"}, "kind": "return_alias_unseen"}
+{"id": "test_00457", "文": "剥離セット準備お願いします。", "判定": "OK", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00039", "文": "お手数ですが、吸引器をお願いいたします。", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00111", "文": "ステンレスウエットティッシュお願いします", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00066", "文": "１０番メス", "判定": "OK", "gold": {"action": "hand", "instrument": "scalpel"}, "kind": "hand_alias_unseen"}
+{"id": "test_00605", "文": "さしごとお願いします。剪刀。", "判定": "捨てる", "gold": {"action": "hand", "instrument": "scissors"}, "kind": "hand_alias_unseen"}
+{"id": "test_00079", "文": "スコープ", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00004", "文": "ガーゼ", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00439", "文": "準備ができたら、切開用の器具を出してください。", "判定": "OK", "gold": {"action": "hand", "instrument": "scalpel"}, "kind": "hand_use"}
+{"id": "test_00371", "文": "タプタプ用のやつ貸してもらえる？", "判定": "捨てる", "gold": {"action": "hand", "instrument": "forceps"}, "kind": "hand_use"}
+{"id": "test_00098", "文": "クリップをお願いします。", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00277", "文": "吸引器をお願いします。", "判定": "OK", "gold": {"action": "hand", "instrument": "syringe"}, "kind": "hand_use"}
+{"id": "test_00497", "文": "注意しとくが、ここは静かに正確に動いてもらうんだ。これは器械出しの仕事じゃないからな。", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "test_00025", "文": "やばいな、俺たちは器械出しじゃないんだよおい。", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "test_00421", "文": "剥離するから器具出すよ", "判定": "OK", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00096", "文": "切れ準備", "判定": "捨てる", "gold": {"action": "hand", "instrument": "scissors"}, "kind": "hand_use"}
+{"id": "test_00680", "文": "切離用の器械をお願いします。", "判定": "捨てる", "gold": {"action": "unavailable", "instrument": "scissors"}, "kind": "unavailable_use"}
+{"id": "test_00106", "文": "１０番メスよろしくお願いします", "判定": "OK", "gold": {"action": "hand", "instrument": "scalpel"}, "kind": "hand_alias_unseen"}
+{"id": "test_00219", "文": "シリンジ早いよ", "判定": "捨てる", "gold": {"action": "unavailable", "instrument": "syringe"}, "kind": "unavailable_alias_unseen"}
+{"id": "test_00344", "文": "準備でき次第持ってきてください", "判定": "捨てる", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00143", "文": "吸引石の準備お願いします", "判定": "捨てる", "gold": {"action": "hand", "instrument": "syringe"}, "kind": "hand_use"}
+{"id": "test_00133", "文": "クリーニングブラシお願いします", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00272", "文": "準備OKですか？", "判定": "捨てる", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00441", "文": "剥離用のスコットルをお願いします。", "判定": "捨てる", "gold": {"action": "hand", "instrument": "scalpel"}, "kind": "hand_use"}
+{"id": "test_00123", "文": "注意するんだ、これは器械出しの仕事じゃないよ。", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "test_00196", "文": "ステープラー欲しぃな", "判定": "捨てる", "gold": {"action": "hand", "instrument": "scalpel"}, "kind": "hand_use"}
+{"id": "test_00685", "文": "シリンジ欲しいよ", "判定": "OK", "gold": {"action": "hand", "instrument": "syringe"}, "kind": "hand_alias_unseen"}
+{"id": "test_00448", "文": "準備ができたら、吸引器をください。", "判定": "OK", "gold": {"action": "hand", "instrument": "syringe"}, "kind": "hand_use"}
+{"id": "test_00586", "文": "ガーゼパックお願いします", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00537", "文": "止まっているときは静かに待機しといてくれ。危ない行動見たら即制止するからな。", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "test_00620", "文": "剥離するぞい、道具出しな？", "判定": "OK", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00164", "文": "無鈎持って来い", "判定": "OK", "gold": {"action": "hand", "instrument": "forceps"}, "kind": "hand_alias_unseen"}
+{"id": "test_00582", "文": "離断するから器具出す？", "判定": "捨てる", "gold": {"action": "unavailable", "instrument": "scissors"}, "kind": "unavailable_use"}
+{"id": "test_00116", "文": "準備OK？", "判定": "捨てる", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00227", "文": "ステッカーやねんきゅうせいき以外で使うものある？", "判定": "捨てる", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00169", "文": "準備お願いします", "判定": "捨てる", "gold": {"action": "unavailable", "instrument": "scalpel"}, "kind": "unavailable_use"}
+{"id": "test_00250", "文": "やばいな、落ち着けよ。", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "test_00692", "文": "無鈎早く！", "判定": "OK", "gold": {"action": "hand", "instrument": "forceps"}, "kind": "hand_alias_unseen"}
+{"id": "test_00535", "文": "シリンジ準備して。", "判定": "OK", "gold": {"action": "unavailable", "instrument": "syringe"}, "kind": "unavailable_alias_unseen"}
+{"id": "test_00032", "文": "剥離用器具をお願いします。", "判定": "OK", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00486", "文": "クリーニングタオルをお願いします。", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00273", "文": "ガーゼパックお願いします。", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00225", "文": "剪刀こちらです。", "判定": "捨てる", "gold": {"action": "hand", "instrument": "scissors"}, "kind": "hand_alias_unseen"}
+{"id": "test_00502", "文": "手術進行中でしょ、これで保持して。", "判定": "捨てる", "gold": {"action": "hand", "instrument": "forceps"}, "kind": "hand_use"}
+{"id": "test_00014", "文": "ロッドをお願いします。", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00139", "文": "ドレーン", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00078", "文": "１０番メスお願いします。", "判定": "OK", "gold": {"action": "unavailable", "instrument": "scalpel"}, "kind": "unavailable_alias_unseen"}
+{"id": "test_00591", "文": "ロープをお願いします。", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00207", "文": "切開器具", "判定": "OK", "gold": {"action": "hand", "instrument": "scalpel"}, "kind": "hand_use"}
+{"id": "test_00008", "文": "無鈎", "判定": "OK", "gold": {"action": "hand", "instrument": "forceps"}, "kind": "hand_alias_unseen"}
+{"id": "test_00378", "文": "お願いします、切るための器具を。", "判定": "OK", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00312", "文": "クリップスタンドお願いします。", "判定": "捨てる", "gold": {"action": "hand", "instrument": "forceps"}, "kind": "hand_use"}
+{"id": "test_00618", "文": "準備して！吸う準備！", "判定": "OK", "gold": {"action": "unavailable", "instrument": "syringe"}, "kind": "unavailable_use"}
+{"id": "test_00555", "文": "クリーミングスポンジ欲しけりゃ？", "判定": "捨てる", "gold": {"action": "hand", "instrument": "scalpel"}, "kind": "hand_use"}
+{"id": "test_00608", "文": "電刀", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00069", "文": "剥離するぞい、道具くれよ", "判定": "捨てる", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00429", "文": "準備ができたら、縫合器をください。", "判定": "捨てる", "gold": {"action": "unavailable", "instrument": "forceps"}, "kind": "unavailable_use"}
+{"id": "test_00094", "文": "戻そう。", "判定": "OK", "gold": {"action": "return", "instrument": "forceps"}, "kind": "return_noname"}
+{"id": "test_00115", "文": "戻しときな。", "判定": "OK", "gold": {"action": "return", "instrument": "forceps"}, "kind": "return_noname"}
+{"id": "test_00515", "文": "皮膚切開をお願いします。", "判定": "捨てる", "gold": {"action": "hand", "instrument": "scalpel"}, "kind": "hand_use"}
+{"id": "test_00199", "文": "ドレナージお願いします。", "判定": "OK", "gold": {"action": "hand", "instrument": "syringe"}, "kind": "hand_use"}
+{"id": "test_00021", "文": "剥離用の器具をお願いします。", "判定": "OK", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00545", "文": "準備ができたら、固定用の器具を。", "判定": "OK", "gold": {"action": "hand", "instrument": "forceps"}, "kind": "hand_use"}
+{"id": "test_00189", "文": "シリンジこちらお願いします。", "判定": "OK", "gold": {"action": "hand", "instrument": "syringe"}, "kind": "hand_alias_unseen"}
+{"id": "test_00563", "文": "ガーゼパッドをお願いします。", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00639", "文": "クリーニングタオルお願いします。", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00074", "文": "吸引器お願いします。", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00190", "文": "やばいなこの間のやつまたするなよ", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "test_00654", "文": "準備OKですか？刃渡り取って。", "判定": "捨てる", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00062", "文": "１０番メスすぐに！", "判定": "OK", "gold": {"action": "hand", "instrument": "scalpel"}, "kind": "hand_alias_unseen"}
+{"id": "test_00402", "文": "１０番メス早く！", "判定": "OK", "gold": {"action": "return", "instrument": "scalpel"}, "kind": "return_alias_unseen"}
+{"id": "test_00681", "文": "剥離するからね、そのあとの処理用の器具くれる？", "判定": "捨てる", "gold": {"action": "hand", "instrument": "scalpel"}, "kind": "hand_use"}
+{"id": "test_00218", "文": "切りますので、縫合刀をお願いします。", "判定": "捨てる", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00036", "文": "剥離器をお願いします。", "判定": "捨てる", "gold": {"action": "hand", "instrument": "scalpel"}, "kind": "hand_use"}
+{"id": "test_00520", "文": "コケルなことするなよ", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "test_00364", "文": "ローラー式吸引器お願いします。", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00464", "文": "剥離用品準備お願いします", "判定": "OK", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00086", "文": "無鈎持って！", "判定": "捨てる", "gold": {"action": "hand", "instrument": "forceps"}, "kind": "hand_alias_unseen"}
+{"id": "test_00140", "文": "シリンジをお願いします。", "判定": "OK", "gold": {"action": "hand", "instrument": "syringe"}, "kind": "hand_alias_unseen"}
+{"id": "test_00126", "文": "シリンジ準備", "判定": "OK", "gold": {"action": "hand", "instrument": "syringe"}, "kind": "hand_alias_unseen"}
+{"id": "test_00114", "文": "シャスティ準備お願いします。", "判定": "捨てる", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00028", "文": "ローブ", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00220", "文": "無鈎早い！", "判定": "捨てる", "gold": {"action": "hand", "instrument": "forceps"}, "kind": "hand_alias_unseen"}
+{"id": "test_00142", "文": "準備万端ですね、この次は固定用の器具をお送りします。", "判定": "捨てる", "gold": {"action": "hand", "instrument": "forceps"}, "kind": "hand_use"}
+{"id": "test_00224", "文": "１０番メスをお願いします", "判定": "OK", "gold": {"action": "unavailable", "instrument": "scalpel"}, "kind": "unavailable_alias_unseen"}
+{"id": "test_00416", "文": "準備ができていますか？今度は固定用の器具を。", "判定": "OK", "gold": {"action": "unavailable", "instrument": "forceps"}, "kind": "unavailable_use"}
+{"id": "test_00001", "文": "準備OK？切る準備", "判定": "OK", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00302", "文": "準備ができ次第、ススメをください。", "判定": "捨てる", "gold": {"action": "hand", "instrument": "scissors"}, "kind": "hand_use"}
+{"id": "test_00054", "文": "注意しとけ！他に手伝いinオペのことは無視してこい！", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "test_00005", "文": "トリミング用に準備して。", "判定": "OK", "gold": {"action": "hand", "instrument": "scissors"}, "kind": "hand_use"}
+{"id": "test_00465", "文": "剥離準備！", "判定": "OK", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00027", "文": "ガーゼパック準備して。", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00682", "文": "クリップが必要です。", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00447", "文": "シリンジ返せ", "判定": "OK", "gold": {"action": "return", "instrument": "syringe"}, "kind": "return_alias_unseen"}
+{"id": "test_00353", "文": "吸引器準備してきますね？", "判定": "捨てる", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00649", "文": "切れ込み用器具準備お願いします", "判定": "OK", "gold": {"action": "hand", "instrument": "scalpel"}, "kind": "hand_use"}
+{"id": "test_00468", "文": "注意深く仕事をし、他のことはここではしないでください。", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "test_00121", "文": "シリンジ早いので", "判定": "捨てる", "gold": {"action": "unavailable", "instrument": "syringe"}, "kind": "unavailable_alias_unseen"}
+{"id": "test_00565", "文": "剥離用具よろしく", "判定": "OK", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00536", "文": "戻すよ。", "判定": "OK", "gold": {"action": "return", "instrument": "scissors"}, "kind": "return_noname"}
+{"id": "test_00214", "文": "ドクターより指示書をお願いします。", "判定": "捨てる", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00343", "文": "無鈎お願いします。", "判定": "OK", "gold": {"action": "return", "instrument": "forceps"}, "kind": "return_alias_unseen"}
+{"id": "test_00255", "文": "カテーテル準備お願いします。", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00597", "文": "やめろ、危険だよ！", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "test_00478", "文": "切開器具貸してください", "判定": "捨てる", "gold": {"action": "unavailable", "instrument": "scalpel"}, "kind": "unavailable_use"}
+{"id": "test_00383", "文": "ご用意願います。", "判定": "捨てる", "gold": {"action": "unavailable", "instrument": "syringe"}, "kind": "unavailable_use"}
+{"id": "test_00222", "文": "無鈎ください", "判定": "OK", "gold": {"action": "hand", "instrument": "forceps"}, "kind": "hand_alias_unseen"}
+{"id": "test_00031", "文": "無鈎をお願いします。", "判定": "OK", "gold": {"action": "hand", "instrument": "forceps"}, "kind": "hand_alias_unseen"}
+{"id": "test_00058", "文": "流水をお願いします。", "判定": "OK", "gold": {"action": "hand", "instrument": "syringe"}, "kind": "hand_use"}
+{"id": "test_00208", "文": "無鈎すぐに", "判定": "OK", "gold": {"action": "hand", "instrument": "forceps"}, "kind": "hand_alias_unseen"}
+{"id": "test_00090", "文": "準備して。", "判定": "直して OK", "gold": {"action": "clarify", "instrument": null, "candidates": ["forceps", "scalpel", "scissors", "syringe"]}, "kind": "hand_use"}
+{"id": "test_00526", "文": "やばいなよ、集中しろよ。", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "test_00458", "文": "準備万端です、クリッパーをお願いします。", "判定": "捨てる", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00146", "文": "注意しないと危険だよ、ちゃんと器具を優しく渡せ。「器械出し」という役割以外のことは言わないでくれ。", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "test_00540", "文": "無鈎持て", "判定": "捨てる", "gold": {"action": "hand", "instrument": "forceps"}, "kind": "hand_alias_unseen"}
+{"id": "test_00055", "文": "注意しといてくれ！他のことするなよ。", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "test_00629", "文": "切開器具お願いします", "判定": "OK", "gold": {"action": "hand", "instrument": "scalpel"}, "kind": "hand_use"}
+{"id": "test_00176", "文": "切除用器具よろしくお願いします。", "判定": "OK", "gold": {"action": "hand", "instrument": "scalpel"}, "kind": "hand_use"}
+{"id": "test_00083", "文": "吸引器準備しておいてくれる？", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00435", "文": "気をつけて、ただの話はここじゃだめだよ。", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "test_00125", "文": "戻すよろしくね", "判定": "OK", "gold": {"action": "return", "instrument": "scissors"}, "kind": "return_noname"}
+{"id": "test_00499", "文": "準備万端です、保持用の器具をお願いします。", "判定": "捨てる", "gold": {"action": "hand", "instrument": "forceps"}, "kind": "hand_use"}
+{"id": "test_00261", "文": "カナバル準備お願いします", "判定": "捨てる", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00394", "文": "シリンジ出してください。", "判定": "OK", "gold": {"action": "hand", "instrument": "syringe"}, "kind": "hand_alias_unseen"}
+{"id": "test_00204", "文": "準備でき次第、お渡ししますね。", "判定": "捨てる", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00310", "文": "剪刀返してください", "判定": "OK", "gold": {"action": "return", "instrument": "scissors"}, "kind": "return_alias_unseen"}
+{"id": "test_00400", "文": "そのバケモノ、もうちょっと器用に持ってきてやれや！", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "test_00437", "文": "ロクロ準備お願いします。", "判定": "捨てる", "gold": {"action": "clarify", "instrument": null, "candidates": ["scalpel", "scissors"]}, "kind": "clarify"}
+{"id": "test_00161", "文": "ステンレススワロフスキーお願いします", "判定": "OK", "gold": {"action": "unavailable", "instrument": null}, "kind": "unavailable_other"}
+{"id": "test_00019", "文": "スコープ準備", "判定": "捨てる", "gold": {"action": "hand", "instrument": "scissors"}, "kind": "hand_use"}
+{"id": "test_00323", "文": "シリンジくれ！", "判定": "OK", "gold": {"action": "hand", "instrument": "syringe"}, "kind": "hand_alias_unseen"}
+{"id": "test_00683", "文": "準備ができたら、保持用の器具を。", "判定": "OK", "gold": {"action": "hand", "instrument": "forceps"}, "kind": "hand_use"}
+{"id": "test_00279", "文": "使い終わったのはスコープですね", "判定": "捨てる", "gold": {"action": "return", "instrument": "syringe"}, "kind": "return_noname"}
+{"id": "refuse_te_0029", "文": "振って", "判定": "OK", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0095", "文": "フリマワ", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0099", "文": "プシ", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0101", "文": "メスを振ってください", "判定": "OK", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0035", "文": "注射器でたたいて", "判定": "OK", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0002", "文": "ユラユラ", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0011", "文": "ハサミ捨てて", "判定": "OK", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0141", "文": "これ注射器投げて", "判定": "OK", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0049", "文": "メスさん叩いて", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0005", "文": "揺らして", "判定": "OK", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0051", "文": "ハサミ振りまわして", "判定": "OK", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0138", "文": "振りまわしていただけますでしょうか。", "判定": "OK", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0080", "文": "ハサミすてて", "判定": "OK", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0142", "文": "フリマサ", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0058", "文": "ネー", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0008", "文": "投げろ", "判定": "OK", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0096", "文": "ローブタット", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0147", "文": "投げて", "判定": "OK", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0010", "文": "注射器をおいてください", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0137", "文": "ハサミさん、早く揺らして！", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0014", "文": "ハサミ投げろ", "判定": "OK", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0073", "文": "揺らげて", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0037", "文": "ハサミ、早計に！", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0118", "文": "プチプチ", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0032", "文": "メス、なげろ", "判定": "OK", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0113", "文": "これ捨ته", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0044", "文": "ユラハサ", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0054", "文": "パスセット投げろ", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0057", "文": "注射器投げろ", "判定": "OK", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0030", "文": "これ投げて", "判定": "OK", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0004", "文": "メス投げろ", "判定": "OK", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0117", "文": "ハサミを振って", "判定": "OK", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}
+{"id": "refuse_te_0107", "文": "プイプイ", "判定": "捨てる", "gold": {"action": "refuse", "instrument": null}, "kind": "refuse"}

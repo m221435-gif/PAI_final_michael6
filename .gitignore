@@ -1,0 +1,8 @@
+.venv*/
+.hf/
+llm/runs/
+llm/data/
+robot/runs/
+robot/pickup_assets/sim/assets/
+__pycache__/
+*.log
